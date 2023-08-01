@@ -4,10 +4,15 @@
 1) this code is only targeted to one application. application is GPL the code is prob MIT and bsd hmmm, I guess that is all fine. I could rewrite it all if I need to ... 
 2) the nightly build compiles the deps + sec updates and combines with our small class to store data for gpu-lines. This is the only custom part. 
 
-### temporary
+### references great work by following authors:-
 
-1) pretty sure I am gonna get a bit dispondent about cjs and esm.. since i like esm. and i think all the code is likely cjs ...
+1) matt desl
+2) glvis
+3) rreusser
+4) flekschas
+5) deluksic
 
+todo links later on to them.. 
 
 #### status
 
