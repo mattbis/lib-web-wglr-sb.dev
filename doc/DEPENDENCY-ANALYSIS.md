@@ -1,0 +1,1 @@
+Its come to my attention; despite wanting to brutally rewrite parts of regl myself. That I am mad to do so. So we are using regl, and choosing a combination of modules that satisfy our projects criterion.
