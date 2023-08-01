@@ -19,5 +19,5 @@ todo links later on to them..
 1) ~~check out the deps, I havent looked at this stuff for quite some time, no idea what is cjs or esm... doing this somewhere else....~~ tis cjs we can use it esm though
 2) ~~kinda avoid getting sentimental about what i did before which is rewriting parts of regl.. and really silly .. this time we just use their stuff fully~~
 3) ~~sorry I gotta fork all your projects since people go mad and delete their stuff...  and i need to rely on this code so i dont need to do it until i can finish my own tiny engine thing~~
-4) lets choose a build system .... hmmm , rolllup will do ..
-5) hmmm I might need to eat.. probably all your getting for now.. since i need to look at those forks first.. 
+4) ~~lets choose a build system .... hmmm , rolllup will do~~
+6) hmmm I might need to eat.. probably all your getting for now.. since i need to look at those forks first.. 
