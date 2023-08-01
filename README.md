@@ -7,3 +7,8 @@
 ### temporary
 
 1) pretty sure I am gonna get a bit dispondent about cjs and esm.. since i like esm. and i think all the code is likely cjs ...
+
+
+#### status
+
+1) check out the deps, I havent looked at this stuff for quite some time, no idea what is cjs or esm... 
