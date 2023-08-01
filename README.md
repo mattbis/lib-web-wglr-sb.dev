@@ -12,3 +12,4 @@
 #### status
 
 1) check out the deps, I havent looked at this stuff for quite some time, no idea what is cjs or esm... doing this somewhere else....
+2) kinda avoid getting sentimental about what i did before which is rewriting parts of regl.. and really silly .. this time we just use their stuff fully
