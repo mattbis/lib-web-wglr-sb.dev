@@ -4,6 +4,8 @@
 1) this code is only targeted to one application. application is GPL, the dep code is prob MIT and bsd hmmm, I guess that is all fine. I could rewrite it all if I need to ... 
 2) the nightly build compiles the deps + sec updates and combines with our small class to store data for gpu-lines. This is the only custom part. 
 
+## DO NOT RUN ANYTHING YET - I AM NOT TESTING ATM
+
 ### references, based on, attributes the great work by following authors:-
 
 1) matt desl
