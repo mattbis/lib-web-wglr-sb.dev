@@ -52,4 +52,48 @@ wooooooooooooooahh what is this?
     // take the geometry and turn into a type of face for the line... basically.. probably... 
     // for each 3 forwards, do the others or whatever
   }
+
+  // whack in more stuff i nconverted before etc
+
+  /// instead of fromValues, uses WGLR2.fr3 ( like fround but 3 )
+  static angle=(
+    aVec3=void 0,
+    bVec3=void 0,
+    normA=WGLR2['Vec33']['norm'](WGLR2['fr3'](aVec3)),
+    normB=WGLR2['Vec33']['norm'](WGLR2['fr3'](aVec3)),
+    cos=WGLR2['Vec33']['dot'](normA, normB)
+  ) => cos>1.0 
+    ?0 
+    :Math['acos'](cos)
+
+    based on the uber class
+
+
+      // product    
+  static dot=(aVec3=void 0,bVec3=void 0) => aVec3[0]*bVec3[0] + aVec3[1]*bVec3[1] + aVec3[2]*bVec3[2]
+
+   static add=(
+    aVec3=void 0,
+    bVec3=void 0,
+    target=void 0,
+    retVal=[aVec3[0]+bVec3[0], aVec3[1]+bVec3[1], aVec3[2]+aVec3[2]]
+  ) => target&&(target[0]=retVal[0],target[1]=retVal[1],target[2]=retVal[2], target) || retVal
+
+    static transform_mat_quad=(
+    aVec3=void 0,
+    qVec3=void 0,// dunno why call it q, need more maths for meself
+    target=void 0,// output reference
+    retVal=void 0, // transient return
+    qx=qVec3[0], qy=qVec3[1], qz=qVec3[2], qw=qVec3[3],
+    x=aVec3[0], y=aVec3[1], z=aVec3[2], 
+    uvx=qy*z - qz*y,
+    uvy=qz*x - qx*z, 
+    uvz=qx*y - qy*x,
+    w2=qw * 2
+  ) => (
+    (uvx *= w2,uvy *= w2,uvz *= w2),
+    (target[0]=retVal[0],target[1]=retVal[1],target[2]=retVal[2],target)
+  )
 ```
+
+// we totally are not doing the above but it was fun to try that style... this time just using the depths of regl.. and 
