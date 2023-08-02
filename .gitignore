@@ -1,2 +1,9 @@
 node_modules
 var/**
+.DS_Store
+.vscode
+.idea
+node_modules/
+var/run
+var/build
+.log
