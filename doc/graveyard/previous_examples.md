@@ -1,6 +1,6 @@
 here is a bit of what I did before :
 
-js```
+```js
 wooooooooooooooahh what is this?
 
   static m(
@@ -94,7 +94,6 @@ wooooooooooooooahh what is this?
     (uvx *= w2,uvy *= w2,uvz *= w2),
     (target[0]=retVal[0],target[1]=retVal[1],target[2]=retVal[2],target)
   )
-```
 
 // we totally are not doing the above but it was fun to try that style... this time just using the depths of regl.. and
 
@@ -117,7 +116,7 @@ WGLR2['Vec22']= class Vec22 {
     return void 0
   }
 
-just how i was thinking avbout it before
+// just how i was thinking avbout it before
 
 
 static rot=(
@@ -157,11 +156,7 @@ WGLR2['fifi']= class fifi {/// float interface float interface
   static deg_to_rad= (deg=$T.F_FLT) => deg*Math.PI / 180 /// degrees to radians
 
 
-it appears i was intent on rewriting the entire stack in my madness.... into classy class class... hehehe
-
-
-there is a ton of this code... why did i just not use regl???????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
-
+// it appears i was intent on rewriting the entire stack in my madness.... into classy class class... hehehe
 
   get_shader_src= (id=void 0) => WGLR2['doc']['getElementById'](id)['textContent']['toString']()['replace'](/^\s+|\s+$/g, '')
 
@@ -183,4 +178,5 @@ there is a ton of this code... why did i just not use regl??????????????????????
     return void 0
   }
 
-this is one good part new G() gives you G.l hahahahhaa i actually think that is cool we might keep this part.. but we dont need it since regl does it all 
+// this is one good part new G() gives you G.l < might keep this... 
+```
