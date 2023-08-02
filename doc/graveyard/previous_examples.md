@@ -96,4 +96,65 @@ wooooooooooooooahh what is this?
   )
 ```
 
-// we totally are not doing the above but it was fun to try that style... this time just using the depths of regl.. and 
+// we totally are not doing the above but it was fun to try that style... this time just using the depths of regl.. and
+
+
+/* region VEC22*/
+WGLR2['Vec22']= class Vec22 {
+  msg= 'Vec22: '
+  x=void 0 /// set directly as a property
+  y=void 0 /// set directly as a property
+  value=void 0 /// has no type unless constructed
+
+  set_property(
+    x=void 0,
+    y=void 0,
+    i=$T.F_INT
+  ) {
+    invariant(void 0===x && void 0===y && void 0===i,'invalid parameters')
+    this[i,`x${i}`||'x']=x
+    this[i,`y${i}`||'y']=y
+    return void 0
+  }
+
+just how i was thinking avbout it before
+
+
+static rot=(
+    angle=void 0, 
+    x=void 0, y=void 0,
+    target=void 0,
+    // ignore
+    useRads=!0,
+    TO_RAD= useRads ?Math.PI/180 :void 0,
+    cosR=Math['cos'](angle * (useRads ?1 :TO_RAD)), 
+    sinY=Math['cos'](angle * (useRads ?1 :TO_RAD)),
+    retVal=[x*cosR - y*sinY, x*sinY + y*cosR]
+  ) => target&&(target[0]=retVal[0],target[1]=retVal[1], target) || retVal
+
+/*region FIFI*/
+/// using num you build bound interface to chosen size
+WGLR2['fifi']= class fifi {/// float interface float interface
+  /*region PF*/
+  /// temporary lazy testing
+  static pf_map=(f=$T.F_FLT) => WGLR2['pf'](f)
+  
+  /// precisely fast
+  static pf=(
+    flt= $T.F_FLT,
+    precision= 5,
+    fact= Math.pow(10,precision),
+    retVal= Math.round(flt*fact
+  )) => retVal/fact
+  /*endregion PF*/
+
+  /* region CONSTANTS*/
+  EPSILON= 0.000001
+  /* endregion CONSTANTS*/
+  
+  /* region ANGULAR*/
+  static rad_to_deg= (rad=$T.F_FLT) => rad*180 / Math.PI /// radians to degrees
+  static deg_to_rad= (deg=$T.F_FLT) => deg*Math.PI / 180 /// degrees to radians
+
+
+it appears i was intent on rewriting the entire stack in my madness.... into classy class class... hehehe
