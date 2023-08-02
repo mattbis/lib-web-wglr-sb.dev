@@ -158,3 +158,29 @@ WGLR2['fifi']= class fifi {/// float interface float interface
 
 
 it appears i was intent on rewriting the entire stack in my madness.... into classy class class... hehehe
+
+
+there is a ton of this code... why did i just not use regl???????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+
+
+  get_shader_src= (id=void 0) => WGLR2['doc']['getElementById'](id)['textContent']['toString']()['replace'](/^\s+|\s+$/g, '')
+
+  //https://github.com/dmnsgn/glsl-constants
+  create_shader (
+    src=$T.F_STR, 
+    type=$T.F_STR
+  ) {
+    invariant(src||type,'WGLR2.create_shader needs stuff')
+    const shader= this['l']['createShader'](type)
+    this['l']['shaderSource'](shader, src)
+    this['l']['compileShader'](shader)
+    this['l']['attachShader'](this['program'], shader)
+    const res= this['l']['getShaderParameter'](shader, this['l']['COMPILE_STATUS'])
+    invariant(res, `createProgram: could not compile WebGL program. \n\n ${this['l']['getShaderInfoLog'](shader)}`)
+    // helpers garbage , although the shader will be deleted when not in use?
+    // https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext/deleteShader
+    this['l']['deleteShader'](shader)
+    return void 0
+  }
+
+this is one good part new G() gives you G.l hahahahhaa i actually think that is cool we might keep this part.. but we dont need it since regl does it all 
