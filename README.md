@@ -1,7 +1,7 @@
 # lib-web-wglr-sb.dev
 .. this is targeted only for one application; compiles existing modules. Plus a small class as a prototype for application to use.
 
-1) this code is only targeted to one application. application is GPL the code is prob MIT and bsd hmmm, I guess that is all fine. I could rewrite it all if I need to ... 
+1) this code is only targeted to one application. application is GPL, the dep code is prob MIT and bsd hmmm, I guess that is all fine. I could rewrite it all if I need to ... 
 2) the nightly build compiles the deps + sec updates and combines with our small class to store data for gpu-lines. This is the only custom part. 
 
 ### references great work by following authors:-
