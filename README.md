@@ -1,5 +1,5 @@
 # lib-web-wglr-sb.dev - custom compendium
-## DO NOT RUN ANYTHING YET - I AM NOT TESTING ATM
+### WIP
 .. this is targeted only for one application; compiles existing modules. Plus a small class as a prototype for application to use. Compendium....
 
 1) this code is only targeted to one application. application is GPL, the dep code is prob MIT and bsd hmmm, I guess that is all fine. I could rewrite it all if I need to ... 
